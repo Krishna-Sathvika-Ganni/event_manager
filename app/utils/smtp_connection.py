@@ -1,5 +1,3 @@
-# smtp_client.py
-from builtins import Exception, int, str
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -24,6 +22,7 @@ class SMTPClient:
                 server.starttls()  # Use TLS
                 server.login(self.username, self.password)
                 server.sendmail(self.username, recipient, message.as_string())
+
             logging.info(f"Email sent to {recipient}")
         except Exception as e:
             logging.error(f"Failed to send email: {str(e)}")
