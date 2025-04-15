@@ -56,7 +56,7 @@ def initialize_database():
     except Exception as e:
         pytest.fail(f"Failed to initialize the database: {str(e)}")
 
-# this function setup and tears down (drops tales) for each test function, so you have a clean database for each test.
+# this function setup and tears down (drops tables) for each test function, so you have a clean database for each test.
 @pytest.fixture(scope="function", autouse=True)
 async def setup_database():
     async with engine.begin() as conn:
@@ -64,7 +64,7 @@ async def setup_database():
     yield
     async with engine.begin() as conn:
         # you can comment out this line during development if you are debugging a single test
-        await conn.run_sync(Base.metadata.drop_all)
+         await conn.run_sync(Base.metadata.drop_all)
     await engine.dispose()
 
 @pytest.fixture(scope="function")
@@ -75,6 +75,7 @@ async def db_session(setup_database):
         finally:
             await session.close()
 
+# Fixtures for users
 @pytest.fixture(scope="function")
 async def locked_user(db_session):
     unique_email = fake.email()
@@ -245,20 +246,21 @@ def user_response_data():
 
 @pytest.fixture
 def login_request_data():
-    return {"username": "john_doe_123", "password": "SecurePassword123!"}
+    return {"username": "john_doe_123","email":"john.doe@example.com", "password": "SecurePassword123!"}
+
 
 @pytest.fixture
 async def user_token(user):
     # Passing the user data as a dictionary
     data = {"sub": user.email, "role": user.role}
     return create_access_token(data=data)  # Pass 'data' instead of 'subject'
- 
+
 @pytest.fixture
 async def admin_token(admin_user):
     # Assuming you have an admin_user fixture that provides a user object
     data = {"sub": str(admin_user.id), "role": "ADMIN"}  # Adjust the data as needed
     return create_access_token(data=data, expires_delta=timedelta(minutes=30))
- 
+
 @pytest.fixture
 async def manager_token(manager_user):
     # Assuming you have a fixture `manager_user` that provides a manager user object
