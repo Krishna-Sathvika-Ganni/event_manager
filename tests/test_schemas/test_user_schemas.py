@@ -1,7 +1,6 @@
-from builtins import str
 import pytest
 from pydantic import ValidationError
-from app.schemas.user_schemas import UserBase, UserCreate, UserUpdate, UserResponse, UserListResponse, LoginRequest
+from app.schemas.user_schemas import UserBase, UserCreate, UserUpdate, UserResponse, LoginRequest
 from uuid import uuid4
 
 # Fixtures
@@ -14,7 +13,7 @@ def user_base_data():
         "profile_picture_url": "https://example.com/profile_pictures/john_doe.jpg",
         "bio": "I am a software engineer with over 5 years of experience.",
     }
- 
+
 @pytest.fixture
 def user_create_data():
     return {
@@ -22,7 +21,7 @@ def user_create_data():
         "email": "john.doe@example.com",
         "password": "StrongPassword123!",
     }
- 
+
 @pytest.fixture
 def user_update_data():
     return {
@@ -30,7 +29,7 @@ def user_update_data():
         "first_name": "John",
         "last_name": "Doe",
     }
- 
+
 @pytest.fixture
 def user_response_data():
     return {
@@ -42,14 +41,14 @@ def user_response_data():
         "bio": "I am a software engineer with over 5 years of experience.",
         "last_login_at": "2024-11-23T12:34:56",
     }
- 
+
 @pytest.fixture
 def login_request_data():
     return {
         "email": "john.doe@example.com",
         "password": "StrongPassword123!",
     }
- 
+
 @pytest.fixture
 def user_base_data_invalid():
     return {
@@ -69,7 +68,7 @@ def test_user_base_valid(user_base_data):
 def test_user_base_invalid_email(user_base_data_invalid):
     with pytest.raises(ValidationError) as exc_info:
         UserBase(**user_base_data_invalid)
-     
+    
     assert "value is not a valid email address" in str(exc_info.value)
     assert "john.doe.example.com" in str(exc_info.value)
 
@@ -88,6 +87,7 @@ def test_user_update_valid(user_update_data):
 # Tests for UserResponse
 def test_user_response_valid(user_response_data):
     user = UserResponse(**user_response_data)
+    # Convert UUID to string for comparison
     assert str(user.id) == user_response_data["id"]
 
 # Tests for LoginRequest
