@@ -13,9 +13,9 @@
 [- PASSWORD VALIDATION](#3-password-validation) <br>
 [- EMAIL VERIFICATION](#4-email-verification) <br>
 [- LOGIN VALIDATION](#5-login-validation) <br>
-4. DOCKER HUB DEPLOYMENT <br>
-5. TESTING <br>
-6. COVERAGE <br>
+[4. DOCKER HUB DEPLOYMENT](#4-docker-hub-deployment) <br>
+[5. TESTING](#5-testing) <br>
+[6. COVERAGE](#6-coverage) <br>
 
 ## 1. SETUP INSTRUCTIONS :
 
@@ -125,6 +125,24 @@ LINK TO CODE: [RESOLVED LOGIN VALIDATION](https://github.com/Krishna-Sathvika-Ga
 ## 4. DOCKER HUB DEPLOYMENT:
 
 ![Screenshot 2025-04-15 at 9 15 09 PM](https://github.com/user-attachments/assets/6b769cb1-89af-4df9-9e46-969bffd2ff73)
+
+
+## 5. TESTING:
+
+- To run the automated tests :
+
+``` docker compose exec fastapi pytest ```
+
+- To run specific tests
+
+``` docker compose exec fastapi pytest folder_name/file_name```
+
+
+## 6. COVERAGE:
+
+- To check test coverage :
+
+``` docker compose exec fastapi pytest --cov ```
 
 
 
