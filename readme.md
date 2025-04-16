@@ -145,6 +145,8 @@ LINK TO CODE: [RESOLVED LOGIN VALIDATION](https://github.com/Krishna-Sathvika-Ga
 ``` docker compose exec fastapi pytest --cov ```
 
 
+![Screenshot 2025-04-15 at 6 08 32 PM](https://github.com/user-attachments/assets/0f2f0b9c-31de-4bcb-b377-da61c52fb044)
+
 
 
 
