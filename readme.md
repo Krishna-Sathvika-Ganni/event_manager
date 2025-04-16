@@ -17,6 +17,8 @@
 [5. TESTING](#5-testing) <br>
 [6. COVERAGE](#6-coverage) <br>
 
+[PROJECT OUTCOMES ( REFLECTIONS )](#project-outcomes--reflections-)
+
 ## 1. SETUP INSTRUCTIONS :
 
 - **STEP 1:** Fork the Professor's Repository to our own github account.
@@ -149,5 +151,7 @@ LINK TO CODE: [RESOLVED LOGIN VALIDATION](https://github.com/Krishna-Sathvika-Ga
 
 
 
+## PROJECT OUTCOMES ( REFLECTIONS ):
 
+This project initially took up a significant amount of time learning, specifically how to integrate the expected functionality and workflow. I encountered several problems like inconsistent example values, lack of URL and password validation, missing email-based verification, and erroneous login error handling. I fixed them by making example data standardized, adding validation logic, enhancing error messages, and endpoint securing. In addition, I added JWT-based authentication, structured the database with Alembic migrations, had automated tests running to maintain 92% coverage, and had an operational CI/CD pipeline running with Docker and GitHub Actions.
 
