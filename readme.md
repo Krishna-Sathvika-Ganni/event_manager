@@ -5,17 +5,17 @@
 #### Welcome to the Event Manager Company! My work as a Software QA Analyst/Developer intern is displayed in this repository, where I worked to create and improve a safe REST API that supports OAuth2 authentication based on JWT. Future event administration and registration modules will be built on top of this API, which is intended to handle user-related tasks.
 
 #### Project Overview:
-[1. SETUP INSTRUCTIONS](#1-setup-instructions)
-[2. DATABASE MIGRATION](#2-database-migration)
-[3. RESOLVED ISSUES](#3-resolved-issues)
-[- CURL COMMAND AND EXAMPLE VALUE NICKNAME](#1-curl-command-and-example-value-nickname)
-[- VALIDATING URL](#2-validating-url)
-[- PASSWORD VALIDATION](#3-password-validation)
-[- EMAIL VERIFICATION](#4-email-verification)
-[- LOGIN VALIDATION](#5-login-validation)
-4. DOCKER HUB DEPLOYMENT
-5. TESTING
-6. COVERAGE
+[1. SETUP INSTRUCTIONS](#1-setup-instructions) <br>
+[2. DATABASE MIGRATION](#2-database-migration) <br>
+[3. RESOLVED ISSUES](#3-resolved-issues) <br>
+[- CURL COMMAND AND EXAMPLE VALUE NICKNAME](#1-curl-command-and-example-value-nickname) <br>
+[- VALIDATING URL](#2-validating-url) <br>
+[- PASSWORD VALIDATION](#3-password-validation) <br>
+[- EMAIL VERIFICATION](#4-email-verification) <br>
+[- LOGIN VALIDATION](#5-login-validation) <br>
+4. DOCKER HUB DEPLOYMENT <br>
+5. TESTING <br>
+6. COVERAGE <br>
 
 ## 1. SETUP INSTRUCTIONS :
 
@@ -31,7 +31,13 @@
 
 - **STEP 4:** Access Swagger UI at : localhost/docs
 
+![Screenshot 2025-04-14 at 7 16 35 PM](https://github.com/user-attachments/assets/4a478103-c5bf-45a2-b909-90c68186f7b2)
+
+
 - **STEP 5:** Access PGAdmin at : localhost:5050
+
+![Screenshot 2025-04-14 at 7 16 55 PM](https://github.com/user-attachments/assets/9dcf1ff2-c024-45d1-8834-2149e371a10d)
+
 
 
 ## 2. DATABASE MIGRATION:
@@ -111,6 +117,9 @@ LINK TO CODE: [RESOLVED LOGIN VALIDATION](https://github.com/Krishna-Sathvika-Ga
 
 
 ## 4. DOCKER HUB DEPLOYMENT:
+
+![Screenshot 2025-04-15 at 9 15 09 PM](https://github.com/user-attachments/assets/6b769cb1-89af-4df9-9e46-969bffd2ff73)
+
 
 
 
