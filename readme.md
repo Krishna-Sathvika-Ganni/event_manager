@@ -31,7 +31,10 @@
 
 - **STEP 4:** Access Swagger UI at : localhost/docs
 
-![Screenshot 2025-04-14 at 7 16 35 PM](https://github.com/user-attachments/assets/4a478103-c5bf-45a2-b909-90c68186f7b2)
+
+![Screenshot 2025-04-15 at 9 20 02 PM](https://github.com/user-attachments/assets/3c3e208b-83dc-4272-b71f-a2f877cb9e77)
+
+![Screenshot 2025-04-15 at 9 19 50 PM](https://github.com/user-attachments/assets/cdca2ac1-b46d-4b8d-abab-8afe546bbfb8)
 
 
 - **STEP 5:** Access PGAdmin at : localhost:5050
