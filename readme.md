@@ -79,6 +79,8 @@ Addressed a confusing inconsistency in the Swagger documentation where the nickn
 
 - This discrepancy was fixed to increase the clarity of the documentation and avoid user confusion.
 
+LINK TO ISSUE: [ISSUE](https://github.com/Krishna-Sathvika-Ganni/event_manager/issues/1)
+
 LINK TO CODE: [RESOLVED CURL COMMAND AND EXAMPLE VALUE NICKNAME](https://github.com/Krishna-Sathvika-Ganni/event_manager/commit/d6eba5b9cb62dcdd39cc8af018e00801e11388e5)
 
 ### 2. VALIDATING URL:
@@ -89,7 +91,9 @@ To check for both legitimate and invalid URL submissions, corresponding unit tes
 
 - Invalid URLs now return clear error messages.
 
-- Now, when the system detects invalid URLs, it returns unambiguous error messages and compares them to standard validation rules. 
+- Now, when the system detects invalid URLs, it returns unambiguous error messages and compares them to standard validation rules.
+
+LINK TO ISSUE: [ISSUE](https://github.com/Krishna-Sathvika-Ganni/event_manager/issues/3)
 
 LINK TO CODE: [RESOLVED VALIDATING URL](https://github.com/Krishna-Sathvika-Ganni/event_manager/commit/1051253e6a0ef0431f9726024855f8c4553d8a2e) 
 
@@ -101,6 +105,8 @@ Added robust password validation to detect incorrect passwords during user login
 
 - The validation provides suitable error responses to assist users in resolving login problems.
 
+LINK TO ISSUE: [ISSUE](https://github.com/Krishna-Sathvika-Ganni/event_manager/issues/6)
+
 LINK TO CODE: [RESOLVED PASSWORD VALIDATION](https://github.com/Krishna-Sathvika-Ganni/event_manager/commit/3595075a883c2cd1cc9a941302022a365da085a5)
 
 ### 4. EMAIL VERIFICATION:
@@ -111,6 +117,8 @@ Replaced username-based login with email-based verification to improve usability
 
 - The new system improves overall usability and offers a more straightforward user experience.
 
+LINK TO ISSUE: [ISSUE](https://github.com/Krishna-Sathvika-Ganni/event_manager/issues/9)
+
 LINK TO CODE: [RESOLVED EMAIL VERIFICATION](https://github.com/Krishna-Sathvika-Ganni/event_manager/commit/b6495e32545a5adfc0664765ef1a61586d679f6f)
 
 ### 5. LOGIN VALIDATION:
@@ -120,6 +128,8 @@ Fixed issues with authorization when accessing protected endpoints via the Swagg
 - Resolved an issue where the Swagger UI returned "Internal Server Error" due to missing/invalid access tokens. 
 
 -  Improved error handling and added proper authorization feedback during login and authenticated operations.
+
+LINK TO ISSUE: [ISSUE](https://github.com/Krishna-Sathvika-Ganni/event_manager/issues/11)
 
 LINK TO CODE: [RESOLVED LOGIN VALIDATION](https://github.com/Krishna-Sathvika-Ganni/event_manager/commit/4a3968a14b266920d63b6db7359cc20b36b671cd)
 
